@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MultipleCubes",
+      "request": "launch",
+      "mainClass": "MultipleCubes"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Rotazioni",
+      "request": "launch",
+      "mainClass": "Rotazioni"
+    }
+  ]
+}
