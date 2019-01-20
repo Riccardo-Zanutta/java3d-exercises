@@ -1,7 +1,7 @@
 /*
 
 Riccardo Zanutta - 120169 - zanutta.riccardo@spes.uniud.it
-PointsOfView.java - v1.0
+Projections.java - v1.0
 
 */
 
@@ -18,8 +18,8 @@ import com.sun.j3d.utils.universe.ViewingPlatform;
 
 import com.sun.j3d.utils.geometry.ColorCube;
 
-class PointsOfView {
-  public PointsOfView() {
+class Projections {
+  public Projections() {
     // inizializzo una nuova istanza dell'universo
     SimpleUniverse universe = new SimpleUniverse();
     universe.getViewingPlatform().setNominalViewingTransform();
@@ -27,8 +27,11 @@ class PointsOfView {
     // creo un branch group
     BranchGroup branchGroup = createBranchGroup();
 
+    // apply projection
+    applyProjection(universe);
+    
     // translate user position
-    makeLookAt(universe, 1.0f, 1.0f, 2.41f);
+    makeLookAt(universe, 1.0f, 1.0f, 3.0f);
 
     // aggiungo il branchgroup all'universo
     branchGroup.compile();
@@ -44,6 +47,18 @@ class PointsOfView {
     bg.addChild(tg);
 
     return bg;
+  }
+
+  private void applyProjection(SimpleUniverse universe) {
+    // find view of the universe
+    View view = universe.getViewer().getView();
+		view.setCompatibilityModeEnable(true);
+    // create transformation for projection
+		Transform3D otg = new Transform3D();
+		double ratio = 1024.0/768.0;
+    otg.perspective((Math.PI / 4), ratio, 0, 2.4);
+    // use set left projection
+		view.setLeftProjection(otg);
   }
 
   private void makeLookAt(SimpleUniverse universe, float x, float y, float z) {
@@ -64,6 +79,6 @@ class PointsOfView {
   }
 
   public static void main (String[] args) {
-    new PointsOfView();
+    new Projections();
   }
 }
