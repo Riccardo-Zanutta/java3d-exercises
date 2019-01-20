@@ -1,7 +1,7 @@
 /*
 
 Riccardo Zanutta - 120169 - zanutta.riccardo@spes.uniud.it
-Projections.java - v1.0
+Ortographics.java - v1.0
 
 */
 
@@ -18,8 +18,8 @@ import com.sun.j3d.utils.universe.ViewingPlatform;
 
 import com.sun.j3d.utils.geometry.ColorCube;
 
-class Projections {
-  public Projections() {
+class Ortographics {
+  public Ortographics() {
     // inizializzo una nuova istanza dell'universo
     SimpleUniverse universe = new SimpleUniverse();
     universe.getViewingPlatform().setNominalViewingTransform();
@@ -55,8 +55,7 @@ class Projections {
 		view.setCompatibilityModeEnable(true);
     // create transformation for projection
 		Transform3D otg = new Transform3D();
-		double ratio = 1024.0/768.0;
-    otg.perspective((Math.PI / 4), ratio, 0, 2.4);
+    otg.ortho(-1, 1, -1, 1, 1, 4);
     // use set left projection
 		view.setLeftProjection(otg);
   }
@@ -79,6 +78,6 @@ class Projections {
   }
 
   public static void main (String[] args) {
-    new Projections();
+    new Ortographics();
   }
 }
