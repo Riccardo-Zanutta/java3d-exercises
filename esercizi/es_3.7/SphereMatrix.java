@@ -1,3 +1,10 @@
+/*
+
+Riccardo Zanutta - 120169 - zanutta.riccardo@spes.uniud.it
+SphereMatrix.java - v1.0
+
+*/
+
 import javax.vecmath.Point3d;
 import javax.media.j3d.Group;
 import javax.media.j3d.Appearance;

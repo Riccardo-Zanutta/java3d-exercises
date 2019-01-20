@@ -1,8 +1,7 @@
 /*
 
-Main.java VERSION 1.3
-
-This class is a base main object for projects.
+Riccardo Zanutta - 120169 - zanutta.riccardo@spes.uniud.it
+Main.java - v1.0
 
 */
 

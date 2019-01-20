@@ -1,7 +1,7 @@
 /*
 
 Riccardo Zanutta - 120169 - zanutta.riccardo@spes.uniud.it
-Projections.java - v1.0
+Perspectives.java - v1.0
 
 */
 

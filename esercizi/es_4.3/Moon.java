@@ -1,3 +1,10 @@
+/*
+
+Riccardo Zanutta - 120169 - zanutta.riccardo@spes.uniud.it
+Moon.java - v1.0
+
+*/
+
 import javax.media.j3d.Group;
 import javax.media.j3d.TransformGroup;
 import javax.media.j3d.Appearance;

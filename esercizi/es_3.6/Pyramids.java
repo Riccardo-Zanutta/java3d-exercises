@@ -1,8 +1,7 @@
 /*
 
-Main.java VERSION 1.2
-
-This class is a base main object for projects.
+Riccardo Zanutta - 120169 - zanutta.riccardo@spes.uniud.it
+Pyramids.java - v1.0
 
 */
 
@@ -78,8 +77,6 @@ class Pyramids {
   private void makeLookAt(SimpleUniverse universe, float x, float y, float z) {
     // find viewing platform
     ViewingPlatform viewingPlatform = universe.getViewingPlatform();
-    // find view
-    View view = universe.getViewer().getView();
     // find transformgroup for view
     TransformGroup vptg = viewingPlatform.getViewPlatformTransform();
     // create lookat transormation
@@ -98,8 +95,6 @@ class Pyramids {
   private void addKeyMovementsToBranchGroup(SimpleUniverse universe, BranchGroup branchGroup) {
     // find view platform transformgroup
     TransformGroup viewTg = universe.getViewingPlatform().getViewPlatformTransform();
-    // create viewTg transformation
-    Transform3D viewTransform = new Transform3D();
     // create behaviour to navigate with keys
     KeyNavigatorBehavior keyNavBeh = new KeyNavigatorBehavior(viewTg);
     // create bound for key navigator

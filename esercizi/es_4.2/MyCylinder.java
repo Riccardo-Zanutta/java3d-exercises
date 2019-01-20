@@ -1,3 +1,10 @@
+/*
+
+Riccardo Zanutta - 120169 - zanutta.riccardo@spes.uniud.it
+MyCylinder.java - v1.0
+
+*/
+
 import javax.media.j3d.Appearance;
 import javax.media.j3d.GeometryArray;
 import javax.media.j3d.PolygonAttributes;

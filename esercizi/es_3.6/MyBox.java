@@ -1,3 +1,10 @@
+/*
+
+Riccardo Zanutta - 120169 - zanutta.riccardo@spes.uniud.it
+MyBox.java - v1.0
+
+*/
+
 import javax.vecmath.Point3d;
 import javax.media.j3d.Appearance;
 import javax.media.j3d.Shape3D;

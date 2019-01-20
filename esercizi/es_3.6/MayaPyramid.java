@@ -1,3 +1,10 @@
+/*
+
+Riccardo Zanutta - 120169 - zanutta.riccardo@spes.uniud.it
+MayaPyramid.java - v1.0
+
+*/
+
 import javax.media.j3d.Group;
 import javax.media.j3d.Appearance;
 import javax.media.j3d.TransformGroup;
@@ -20,6 +27,7 @@ public class MayaPyramid extends Group {
   public MayaPyramid(float size) {
     this.unit = (size / 15);
     this.appearance = createAppearance();
+  
     createLevels();
   }
 
