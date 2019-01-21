@@ -43,6 +43,8 @@ class Rotation {
     // applico le trasformazioni tramite "rotX", "rotY" e "rotZ"
     rotationX.rotX(Math.PI * 0.1d);
     rotationY.rotY(Math.PI * 0.1d);
+
+    // Unisco le trasformazioni
     rotationY.mul(rotationX);
     rotationZ.rotZ(Math.PI * 0.1d);
     rotationZ.mul(rotationY);

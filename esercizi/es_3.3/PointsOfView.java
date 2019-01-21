@@ -27,7 +27,7 @@ class PointsOfView {
     // creo un branch group
     BranchGroup branchGroup = createBranchGroup();
 
-    // translate user position
+    // imposto il posizionamento dell'osservatore
     makeLookAt(universe, 1.0f, 1.0f, 2.41f);
 
     // aggiungo il branchgroup all'universo
