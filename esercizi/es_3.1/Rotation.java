@@ -41,12 +41,12 @@ class Rotation {
     Transform3D rotationZ = new Transform3D();
 
     // applico le trasformazioni tramite "rotX", "rotY" e "rotZ"
-    rotationX.rotX(Math.PI * 0.1d);
-    rotationY.rotY(Math.PI * 0.1d);
+    rotationX.rotX(Math.PI * 0.2d);
+    rotationY.rotY(Math.PI * 0.2d);
 
     // Unisco le trasformazioni
     rotationY.mul(rotationX);
-    rotationZ.rotZ(Math.PI * 0.1d);
+    rotationZ.rotZ(Math.PI * 0.2d);
     rotationZ.mul(rotationY);
 
     // applico la trasformazione al TransformGroup e la aggiungo al branchgroup

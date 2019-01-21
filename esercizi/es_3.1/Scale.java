@@ -41,7 +41,7 @@ class Scale {
     Transform3D scale = new Transform3D();
     
     // imposto il fattore di scale
-    scale.setScale(1.5d);
+    scale.setScale(2d);
 
     // applico la trasformazione al TransformGroup e la aggiungo al branchgroup
     tg.setTransform(scale); 
