@@ -63,7 +63,7 @@ public class MayaPyramid extends Group {
     // initialize texture object
     Texture texture = textureLoader.getTexture();
     // add texture to the appearance
-    appearance.setTexture(texture);
+    // appearance.setTexture(texture);
     // initialize texture attributes
     TextureAttributes textureAttributes = new TextureAttributes();
 	  textureAttributes.setTextureMode(TextureAttributes.COMBINE);

@@ -54,8 +54,10 @@ class Perspectives {
     View view = universe.getViewer().getView();
 		view.setCompatibilityModeEnable(true);
     // create transformation for projection
-		Transform3D otg = new Transform3D();
-		double ratio = 1024.0/768.0;
+    Transform3D otg = new Transform3D();
+  
+    double ratio = 1024.0/768.0;
+
     otg.perspective((Math.PI / 4), ratio, 0, 2.4);
     // use set left projection
 		view.setLeftProjection(otg);

@@ -1,0 +1,18 @@
+Come si devono fare gli esercizi
+Ogni esercizio contenuto nella scheda deve avere la seguente documentazione:
+
+
+Traccia dell'esercizio;
+
+Scenegraph della scena, rappresentato usando la notazione adottata durante le lezioni e le esercitazioni di laboratorio;
+
+Codice commentato. Non è necessario tutto il codice, ma le parti più significative in relazione a quanto richiesto nell'esercizio.
+
+Motivazioni sul modo in cui è stato svolto l'esercizio. Ad esempio, giustificare perché è stata scelta una determinata struttura per lo scenegraph...
+
+Schermate con i risultati ottenuti;
+
+Conclusioni ed eventuali osservazioni.
+
+
+Gli esercizi dovranno essere raccolti in una relazione da consegnare in forma cartacea prima dell’esame.

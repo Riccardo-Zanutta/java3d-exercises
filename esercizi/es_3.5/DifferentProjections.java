@@ -28,7 +28,7 @@ class DifferentProjections {
     BranchGroup branchGroup = createBranchGroup();
 
     // apply projection
-    applyProjection(universe);
+    useProjections(universe);
     
     // translate user position
     makeLookAt(universe, 1.0f, 1.0f, 2.41f);
@@ -49,7 +49,7 @@ class DifferentProjections {
     return bg;
   }
 
-  private void applyProjection(SimpleUniverse universe) {
+  private void useProjections(SimpleUniverse universe) {
     // find view
     View view = universe.getViewer().getView();
     // change back distances
